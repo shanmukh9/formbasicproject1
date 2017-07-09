@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Easy form validation with HTML5</title>
+
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+
+<body>
+
+	<nav>
+		<a href="index.html">Basics</a>•
+		<a class="active" href="limits.html">Limits</a>•
+		<a href="styling.html">Styling</a>•
+		<a href="tooltips.html">Tooltips</a>•
+		<a href="patterns.html">Patterns</a>
+	</nav>
+
+	<form action="">
+
+		<div class="form-title-row">
+			<h1>Limits</h1>
+		</div>
+
+		<div class="form-row">
+			<label>
+				<span>Name</span>
+				<input type="text" name="name" required  maxlength="15">
+			</label>
+		</div>
+
+		<div class="form-row">
+			<label>
+				<span>Comment</span>
+				<textarea name="textarea" required maxlength="144"></textarea>
+			</label>
+		</div>
+
+
+		<div class="form-row">
+			<label>
+				<span>Age</span>
+				<input type="number" name="age" min="18" required>
+			</label>
+		</div>
+
+		<div class="form-row">
+			<button type="submit">Submit Form</button>
+		</div>
+
+		<p class="explanation">Here, we've set a max length on the name and comment fields, and a min restriction on the age.</p>
+
+	</form>
+
+</body>
+
+</html>

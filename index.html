@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Easy form validation with HTML5</title>
+
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+
+<body>
+
+	<nav>
+		<a class="active" href="index.html">Basics</a>•
+		<a href="limits.html">Limits</a>•
+		<a href="styling.html">Styling</a>•
+		<a href="tooltips.html">Tooltips</a>•
+		<a href="patterns.html">Patterns</a>
+	</nav>
+
+	<form action="">
+
+		<div class="form-title-row">
+			<h1>Basics</h1>
+		</div>
+
+		<div class="form-row">
+			<label>
+				<span>Name</span>
+				<input type="text" name="name" required>
+			</label>
+		</div>
+
+		<div class="form-row">
+			<label>
+				<span>Email</span>
+				<input type="email" name="email" required>
+			</label>
+		</div>
+
+		<div class="form-row">
+			<label><span>Gender</span></label>
+			<div class="form-radio-buttons">
+
+				<div>
+					<label>
+						<input type="radio" name="gender" required>
+						<span>Male</span>
+					</label>
+				</div>
+
+				<div>
+					<label>
+						<input type="radio" name="gender">
+						<span>Female</span>
+					</label>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="form-row">
+			<label>
+				<span>I Agree To The Terms &amp; Conditions</span>
+				<input type="checkbox" name="terms" required>
+			</label>
+		</div>
+
+		<div class="form-row">
+			<button type="submit">Submit Form</button>
+		</div>
+
+		<p class="explanation">This example demonstrates the simplest kind of form validation. Try it by attempting to submit an empty form.</p>
+
+	</form>
+
+</body>
+
+</html>
